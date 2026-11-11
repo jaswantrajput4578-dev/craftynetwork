@@ -1,1 +1,88 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CraftyNetwork SMP</title>
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;
+ font-family:Arial,sans-serif;
+ background:#090d18;
+ color:white;
+ text-align:center;
+}
+header{padding:65px 15px;background:linear-gradient(135deg,#151d38,#512080)}
+h1{font-size:38px;color:#ffd45c}
+h2{color:#ffd45c}
+p{color:#d5d9e8;line-height:1.6}
+.card{
+ background:#151d30;
+ margin:20px auto;
+ padding:25px;
+ border-radius:16px;
+ max-width:500px;
+ width:90%;
+ border:1px solid #343e59;
+}
+.ip{
+ background:#080d19;
+ padding:15px;
+ border-radius:10px;
+ font-weight:bold;
+ overflow-wrap:anywhere;
+}
+button{
+ background:#ffbd35;
+ color:#111;
+ border:0;
+ padding:13px 22px;
+ border-radius:9px;
+ font-weight:bold;
+ margin-top:12px;
+}
+footer{padding:25px;color:#aaa}
+</style>
+</head>
+<body>
+<header>
+<h1>⚔️ CRAFTYNETWORK ⚔️</h1>
+<h3>YOUR ADVENTURE STARTS HERE!</h3>
+<p>Survive • Fight • Build • Dominate</p>
+</header>
+
+<div class="card">
+<h2>🌐 SERVER INFORMATION</h2>
+<p>Java Server IP</p>
+<div class="ip" id="ip">craftynetwork579.mcsh.gg</div>
+<button onclick="copyIP()">📋 COPY IP</button>
+<p id="msg"></p>
+</div>
+
+<div class="card">
+<h2>🎮 HOW TO JOIN</h2>
+<p>1. Open Minecraft Java Edition</p>
+<p>2. Click Multiplayer</p>
+<p>3. Add Server</p>
+<p>4. Enter our IP and Join!</p>
+</div>
+
+<div class="card">
+<h2>👑 WELCOME TO CRAFTYNETWORK</h2>
+<p>Make friends, build your empire and become a legend!</p>
+</div>
+
+<footer>© 2026 CraftyNetwork SMP | All Rights Reserved</footer>
+
+<script>
+function copyIP(){
+ navigator.clipboard.writeText("craftynetwork579.mcsh.gg")
+ .then(()=>document.getElementById("msg").innerText="IP Copied! ✅")
+ .catch(()=>document.getElementById("msg").innerText="Copy this IP: craftynetwork579.mcsh.gg");
+}
+</script>
+</body>
+</html>
+
